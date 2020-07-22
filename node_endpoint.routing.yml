@@ -1,0 +1,14 @@
+node_endpoint.content:
+  path: "admin/config/system/site-information"
+  defaults:
+    _form: '\Drupal\node_endpoint\Form\NodeEndpointApiForm'
+    _title: "Node JSON API KEY Form"
+  requirements:
+    _permission: "administer site configuration"
+node_endpoint.data:
+  path: "/data/{api_key}/{content_type}/{node_id}"
+  defaults:
+    _controller: '\Drupal\node_endpoint\Controller\NodeEndpointController::data'
+    _title: "JSON Data"
+  requirements:
+    _permission: "access content"

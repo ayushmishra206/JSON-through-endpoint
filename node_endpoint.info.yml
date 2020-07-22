@@ -1,0 +1,6 @@
+name: Node JSON Through an Endpoint
+description: Provides node JSON data through an endpoint.
+package: Custom
+type: module
+version: 1.0
+core: 8.x

@@ -1,0 +1,6 @@
+node_endpoint.admin:
+  title: "Node API Form"
+  description: "Node API Endpoint"
+  parent: system.admin_config_system_site_information
+  route_name: node_endpoint.content
+  weight: 100
